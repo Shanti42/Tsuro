@@ -1,7 +1,13 @@
-package tsuro;
+package tsuro;//imports TestCase
 
-//imports TestCase
+
 import junit.framework.TestCase;
+
+import org.junit.Test;
+import tsuro.Tsuro;
+import tsuro.TsuroButton;
+
+
 import java.awt.Color;
 
 //test class for Tsuro
@@ -16,6 +22,7 @@ public class TsuroTest extends TestCase{
 
 
     //tests that the row size has been initilized correctly and that the get method returns the correct value
+    @Test
     public void testGetRow(){
         /*tests that constructor for a game of tsuro with an empty input initilizes the rows correctly,
          * and tests the get method for row*/
